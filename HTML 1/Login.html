@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Login Page</title>
+<head>
+<style>
+.try{
+margin-left:650px;
+}
+</style>
+<body>
+ <h5> UserName</h5>
+ <form name="login" >
+<input type="text"name="userid"/><br>
+ <h5 >Password</h5>
+<input type="password" name="pswrd" /><br><br>
+<input type="button" onclick="check(this.form)" value="Login" />
+</form>
+</div>
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "keerthi" && form.pswrd.value == "1501107")
+  {
+   window.open('Loggedin.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+  </div>
+  </div>
+</body>
+</head>
+</html>
+
